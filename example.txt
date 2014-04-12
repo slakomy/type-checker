@@ -1,0 +1,24 @@
+int var1 = 0, var2 = 0, var3 = 0, res = 5;
+
+int gcd(int m, int n) {
+
+if (m!=n) { 
+    if (m > n) 
+        res = gcd(m-n, n);
+    else
+        res = gcd(n-m, 2);
+}
+else
+    res = m;
+
+print res;
+return res;
+}
+
+float fun1(float m, int s, string a) {       
+    return fun1(2.1, 5.1, "string");
+}
+
+while(var1 >= var2 ) {
+    var1 = 5.1*1/2*(var1+var2/var1);
+}
